@@ -100,7 +100,7 @@ int interpret(std::string code, const int MEM_SIZE = 32768) {
                 break;
 
             case 'n':
-                std::cout << static_cast<unsigned int>(memory[pointer]);
+                std::cout << static_cast<unsigned int>(static_cast<unsigned char>(memory[pointer]));
                 break;
 
             case 'r':
